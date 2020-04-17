@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/models/product';
+import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-edit',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edit.component.css']
 })
 export class EditComponent implements OnInit {
-
-  constructor() { }
+  product: Product;
+  key: string;
+  constructor(private ps: ProductsService) { }
 
   ngOnInit(): void {
   }
 
+  onSubmit(){
+
+  }
 }

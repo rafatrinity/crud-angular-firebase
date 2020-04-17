@@ -1,1 +1,30 @@
-<p>edit works!</p>
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nome">nome</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="product.name"
+        name="nome"
+      />
+    </div>
+    <div class="form-group">
+      <label for="desc">descrição</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="product.description"
+        name="desc"
+      />
+    </div>
+    <div class="form-group">
+      <label for="price">preço</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="product.price"
+        name="price"
+      />
+    </div>
+    <button type="submit">Salvar</button>
+</form>
